@@ -45,7 +45,7 @@ for tab_string in soup.find_all('tr', {'class':{'row1','row2'}}):
 
     print(company,link,Type,city,region,country)
     
-    # write the date into the file
+    # write the data into the file
     csv_writer.writerow([company,link,Type,city,region,country])
 
 csv_file.close()
